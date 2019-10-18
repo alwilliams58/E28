@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-        <script type="text/javascript" src="script/main.js"> </script>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
+        <script type="text/javascript" src="script/main.js" defer> </script>
         <meta charset="UTF-8">
     <title>DGMD E-28</title>
   </head>
@@ -11,23 +11,9 @@
     <h1>DGMD E-28 Project 1 - Simple Game</h1>
       
      
-      <h4>What should  {{ dog }} Do with My Shoe ?</h4>
+      <h4 id="app">What should  {{ dog }} Do with My Shoe ?</h4>
       
       <p id = "out_put_txt"></p>
-
-        
-
-      <script type="text/javascript">
-  
-
-        function changeImage(pic,txt) {
-            document.getElementById("main_img").src = pic;
-            document.getElementById("out_put_txt").innerHTML = txt;
-        }
-        function returnImage() {
-          changeImage("img/IMG_0062.jpg","");
-        }
-    </script>
 
     <div id="img_srapper">
         <img id="main_img" src="img/IMG_0062.jpg" alt="Heidi Looks at the Camera" width="300" height="300">
