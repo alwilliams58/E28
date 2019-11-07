@@ -7,16 +7,15 @@
     <title>DGMD E-28</title>
   </head>
   <body class="hw">
-  <div class="container" id="app">
+  <div id="app">
     <h1>DGMD E-28 Project 1 - Simple Game</h1>
       
-     
-      <h4 id="app">What should  {{ dog }} Do with My Shoe ?</h4>
+      <h4 id="app">What should {{ dog }} Do with My Shoe ?</h4>
       
-      <p id = "out_put_txt"></p>
+      <p> {{changeImage()}} </p>
 
     <div id="img_srapper">
-        <img id="main_img" src="img/IMG_0062.jpg" alt="Heidi Looks at the Camera" width="300" height="300">
+        <img  src="img/IMG_0062.jpg" alt="Heidi Looks at the Camera" width="300" height="300">
     </div>
     <div id="select_img">
      
@@ -27,12 +26,12 @@
           <td>Wear It</td>
           </tr>
 <tr>
-<td><img src='img/IMG_0068.jpg' width="95" height="80"  onclick='changeImage("img/IMG_0068.jpg","How do you Tie this?");'></td>
-<td><img src='img/IMG_0065.jpg' width="95" height="80" onclick='changeImage("img/IMG_0065.jpg","PeeYeeW..I like It!");'></td>
-<td><img src='img/IMG_0052.jpg' width="95" height="80" onclick='changeImage("img/IMG_0052.jpg","This shoe is Too Big!");'></td>
+<td><img src='img/IMG_0068.jpg' width="95" height="80"  @click='changeImage("img/IMG_0068.jpg","How do you Tie this?");'></td>
+<td><img src='img/IMG_0065.jpg' width="95" height="80" @click='changeImage("img/IMG_0065.jpg","PeeYeeW..I like It!");'></td>
+<td><img src='img/IMG_0052.jpg' width="95" height="80" @click='changeImage("img/IMG_0052.jpg","This shoe is Too Big!");'></td>
 </tr>
 </table>
-<button onclick="returnImage()">Start Over Heidi</button>
+<button v-on:click="changeImage("img/IMG_0062.jpg","");">Start Over Heidi</button>
 &nbsp; 
     </div>
     
