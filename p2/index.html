@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
+        <script type="text/javascript" src="script/main.js" defer> </script>
+        <meta charset="UTF-8">
+    <title>DGMD E-28</title>
+  </head>
+  <body class="hw">
+  <div id="app">
+    <h1>DGMD E-28 Project 1 - Simple Game</h1>
+      
+      <h4 id="app">What should {{ dog }} Do with My Shoe ?</h4>
+      
+      <p> {{changeImage()}} </p>
+
+    <div id="img_srapper">
+        <img  src="img/IMG_0062.jpg" alt="Heidi Looks at the Camera" width="300" height="300">
+    </div>
+    <div id="select_img">
+     
+   <table>
+      <tr>
+          <td>Tie It</td>
+          <td>Sniff It</td>
+          <td>Wear It</td>
+          </tr>
+<tr>
+<td><img src='img/IMG_0068.jpg' width="95" height="80"  @click='changeImage("img/IMG_0068.jpg","How do you Tie this?");'></td>
+<td><img src='img/IMG_0065.jpg' width="95" height="80" @click='changeImage("img/IMG_0065.jpg","PeeYeeW..I like It!");'></td>
+<td><img src='img/IMG_0052.jpg' width="95" height="80" @click='changeImage("img/IMG_0052.jpg","This shoe is Too Big!");'></td>
+</tr>
+</table>
+<button v-on:click="changeImage("img/IMG_0062.jpg","");">Start Over Heidi</button>
+&nbsp; 
+    </div>
+    
+    </div>
+  </body>
+</html>
+
