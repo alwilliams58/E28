@@ -1,5 +1,11 @@
+import Vue from 'vue'; 
+import HeidiTricks from './components/HeidiTricks.vue';
 var app = new Vue({
     el: '#app',
+    components: {
+      
+    }
+    components
     data:{
       dog: 'Heidi',
       out_put_text:' Please: Sit Pretty'
